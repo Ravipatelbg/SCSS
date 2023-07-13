@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the variables component.
+// -----------------------------------------------------------------------------
+// font-family
+$primary-font: "Satoshi-Variable", sans-serif;
+$secondary-font: "Roboto", sans-serif;
+
+// root color
+$black-color: #000000;
+$white-color: #ffffff;
+$light-grey-color: #f4f4f4;
+$dark-grey-color: #505050;
+
+// font size
+$text-primary: 56px;
+$text-secondary: 48px;
+$text-tittle: 40px;
+$text-sub-tittle: 32px;
+$text-extra-large: 24px;
+$text-large: 20px;
+$text-medium: 18px;
+$text-regular: 16px;
+$text-small: 14px;
+$text-extra-small: 12px;
+
+// media screen breakpoint
+$Xl-desktop: 1499px;
+$desktop: 1199px;
+$x-tablet: 1023px;
+$tablet: 991px;
+$mobile: 710px;
+$x-mobile: 567px;
+$small: 479px;
+
+
+// container size
+$Xl-desktop-container: 1360px;
+$desktop-container: 1100px;
+$x-tablet-container: 900px;
+$tablet-container: 680px;
+$mobile-container: 100%;
+

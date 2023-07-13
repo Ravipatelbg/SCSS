@@ -1,0 +1,307 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass common.
+// -----------------------------------------------------------------------------
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: $Xl-desktop-container;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  &.container-fulid-right {
+    max-width: 100%;
+    .col-left {
+      padding-left: calc((100% - #{$Xl-desktop-container} + 30px) / 2);
+      @media (max-width: $Xl-desktop) {
+        padding-left: calc((100% - #{$desktop-container} + 30px) / 2);
+      }
+      @media (max-width: $desktop) {
+        padding-left: calc((100% - #{$x-tablet-container} + 30px) / 2);
+      }
+      @media (max-width: $tablet) {
+        padding-left: calc((100% - #{$tablet-container} + 30px) / 2);
+      }
+      @media (max-width: $mobile) {
+        padding-left: calc((100% - #{$mobile-container} + 30px) / 2);
+      }
+    }
+  }
+  &.container-fulid-left {
+    max-width: 100%;
+    .col-right {
+      padding-right: calc((100% - #{$Xl-desktop-container} + 30px) / 2);
+      @media (max-width: $Xl-desktop) {
+        padding-right: calc((100% - #{$desktop-container} + 30px) / 2);
+      }
+      @media (max-width: $desktop) {
+        padding-right: calc((100% - #{$x-tablet-container} + 30px) / 2);
+      }
+      @media (max-width: $tablet) {
+        padding-right: calc((100% - #{$tablet-container} + 30px) / 2);
+      }
+      @media (max-width: $mobile) {
+        padding-right: calc((100% - #{$mobile-container} + 30px) / 2);
+      }
+    }
+  }
+  @media (max-width: $Xl-desktop) {
+    max-width: $desktop-container;
+  }
+
+  @media (max-width: $desktop) {
+    max-width: $x-tablet-container;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: $tablet-container;
+  }
+
+  @media (max-width: $mobile) {
+    max-width: $mobile-container;
+  }
+}
+
+.container-small {
+  max-width: $tablet-container;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  @media (max-width: $mobile) {
+    max-width: $mobile-container;
+  }
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  row-gap: 20px;
+}
+
+.col {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// padding
+.padding-section-large {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media (max-width: $tablet) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.padding-section-small {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+// max-width
+.max-width-768 {
+  max-width: 768px;
+}
+
+// margin
+
+// font weight
+.text-weight-semibold {
+  font-weight: 600;
+}
+
+.text-weight-extrabold {
+  font-weight: 900;
+}
+
+// font-size
+.text-size-medium {
+  font-size: $text-medium;
+  @media (max-width: $mobile) {
+    font-size: $text-regular;
+  }
+}
+
+// font small
+.text-size-small {
+  font-size: $text-small;
+}
+.text-size-tiny {
+  font-size: $text-extra-small;
+}
+
+//link
+a {
+  border-color: $black-color;
+  color: $black-color;
+  text-decoration: none;
+}
+
+.text-link-underline {
+  text-decoration: underline;
+}
+
+// form
+input,
+select,
+textarea {
+  outline: none;
+  box-shadow: none;
+  font-family: $primary-font;
+  &::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $dark-grey-color;
+  }
+
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $dark-grey-color;
+  }
+
+  &:-ms-input-placeholder {
+    /* IE 10+ */
+    color: $dark-grey-color;
+  }
+
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    color: $dark-grey-color;
+  }
+}
+
+.button {
+  @include button;
+}
+
+// text-color css
+.text-color-white {
+  color: $white-color;
+}
+
+// background-color css
+.bg-color-white {
+  background-color: $white-color;
+}
+
+// position relative;
+.relative {
+  position: relative;
+}
+
+// text center
+.text-center {
+  text-align: center;
+}
+
+// title font size
+.heading-style-h1 {
+  font-family: $primary-font;
+  font-size: $text-primary;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0em;
+
+  @media (max-width: $tablet) {
+    font-size: 52px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 40px;
+  }
+}
+
+.heading-style-h2 {
+  font-family: $primary-font;
+  font-size: $text-secondary;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0em;
+
+  @media (max-width: $tablet) {
+    font-size: 44px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 36px;
+  }
+}
+
+.heading-style-h3 {
+  font-family: $primary-font;
+  font-size: $text-tittle;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0em;
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+  }
+}
+
+.heading-style-h4 {
+  font-family: $primary-font;
+  font-size: $text-sub-tittle;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0em;
+
+  @media (max-width: $tablet) {
+    font-size: 28px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 24px;
+  }
+}
+
+.heading-style-h5 {
+  font-family: $primary-font;
+  font-size: $text-extra-large;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0em;
+
+  @media (max-width: $mobile) {
+    font-size: 20px;
+  }
+}
+
+.heading-style-h6 {
+  font-family: $primary-font;
+  font-size: $text-large;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0em;
+
+  @media (max-width: $mobile) {
+    font-size: 18px;
+  }
+}

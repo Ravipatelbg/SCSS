@@ -1,0 +1,749 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1360px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.container.container-fulid-right {
+  max-width: 100%;
+}
+.container.container-fulid-right .col-left {
+  padding-left: calc((100% - 1360px + 30px) / 2);
+}
+@media (max-width: 1499px) {
+  .container.container-fulid-right .col-left {
+    padding-left: calc((100% - 1100px + 30px) / 2);
+  }
+}
+@media (max-width: 1199px) {
+  .container.container-fulid-right .col-left {
+    padding-left: calc((100% - 900px + 30px) / 2);
+  }
+}
+@media (max-width: 991px) {
+  .container.container-fulid-right .col-left {
+    padding-left: calc((100% - 680px + 30px) / 2);
+  }
+}
+@media (max-width: 710px) {
+  .container.container-fulid-right .col-left {
+    padding-left: calc((100% - 100% + 30px) / 2);
+  }
+}
+.container.container-fulid-left {
+  max-width: 100%;
+}
+.container.container-fulid-left .col-right {
+  padding-right: calc((100% - 1360px + 30px) / 2);
+}
+@media (max-width: 1499px) {
+  .container.container-fulid-left .col-right {
+    padding-right: calc((100% - 1100px + 30px) / 2);
+  }
+}
+@media (max-width: 1199px) {
+  .container.container-fulid-left .col-right {
+    padding-right: calc((100% - 900px + 30px) / 2);
+  }
+}
+@media (max-width: 991px) {
+  .container.container-fulid-left .col-right {
+    padding-right: calc((100% - 680px + 30px) / 2);
+  }
+}
+@media (max-width: 710px) {
+  .container.container-fulid-left .col-right {
+    padding-right: calc((100% - 100% + 30px) / 2);
+  }
+}
+@media (max-width: 1499px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 900px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 680px;
+  }
+}
+@media (max-width: 710px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.container-small {
+  max-width: 680px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+@media (max-width: 710px) {
+  .container-small {
+    max-width: 100%;
+  }
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  row-gap: 20px;
+}
+
+.col {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.padding-section-large {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (max-width: 991px) {
+  .padding-section-large {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 710px) {
+  .padding-section-large {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.padding-section-small {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media (max-width: 991px) {
+  .padding-section-small {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 710px) {
+  .padding-section-small {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.max-width-768 {
+  max-width: 768px;
+}
+
+.text-weight-semibold {
+  font-weight: 600;
+}
+
+.text-weight-extrabold {
+  font-weight: 900;
+}
+
+.text-size-medium {
+  font-size: 18px;
+}
+@media (max-width: 710px) {
+  .text-size-medium {
+    font-size: 16px;
+  }
+}
+
+.text-size-small {
+  font-size: 14px;
+}
+
+.text-size-tiny {
+  font-size: 12px;
+}
+
+a {
+  border-color: #000000;
+  color: #000000;
+  text-decoration: none;
+}
+
+.text-link-underline {
+  text-decoration: underline;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+  box-shadow: none;
+  font-family: "Satoshi-Variable", sans-serif;
+}
+input::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #505050;
+}
+input::-moz-placeholder,
+select::-moz-placeholder,
+textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #505050;
+}
+input:-ms-input-placeholder,
+select:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #505050;
+}
+input:-moz-placeholder,
+select:-moz-placeholder,
+textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #505050;
+}
+
+.button {
+  padding: 12px 24px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+.text-color-white {
+  color: #ffffff;
+}
+
+.bg-color-white {
+  background-color: #ffffff;
+}
+
+.relative {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading-style-h1 {
+  font-family: "Satoshi-Variable", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0em;
+}
+@media (max-width: 991px) {
+  .heading-style-h1 {
+    font-size: 52px;
+  }
+}
+@media (max-width: 710px) {
+  .heading-style-h1 {
+    font-size: 40px;
+  }
+}
+
+.heading-style-h2 {
+  font-family: "Satoshi-Variable", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0em;
+}
+@media (max-width: 991px) {
+  .heading-style-h2 {
+    font-size: 44px;
+  }
+}
+@media (max-width: 710px) {
+  .heading-style-h2 {
+    font-size: 36px;
+  }
+}
+
+.heading-style-h3 {
+  font-family: "Satoshi-Variable", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0em;
+}
+@media (max-width: 710px) {
+  .heading-style-h3 {
+    font-size: 32px;
+  }
+}
+
+.heading-style-h4 {
+  font-family: "Satoshi-Variable", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0em;
+}
+@media (max-width: 991px) {
+  .heading-style-h4 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 710px) {
+  .heading-style-h4 {
+    font-size: 24px;
+  }
+}
+
+.heading-style-h5 {
+  font-family: "Satoshi-Variable", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0em;
+}
+@media (max-width: 710px) {
+  .heading-style-h5 {
+    font-size: 20px;
+  }
+}
+
+.heading-style-h6 {
+  font-family: "Satoshi-Variable", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0em;
+}
+@media (max-width: 710px) {
+  .heading-style-h6 {
+    font-size: 18px;
+  }
+}
+
+/*
+This file can be used to overwrite any normailze settings.
+*/
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+menu,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/**
+ * Ensure the default browser behavior of the `hidden` attribute.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * @license
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * © 2022 Indian Type Foundry
+ *
+ * Font Styles:
+ * Satoshi Variable(Variable font)
+ * Satoshi Variable Italic(Variable font)
+ * Satoshi Light
+ * Satoshi Light Italic
+ * Satoshi Regular
+ * Satoshi Italic
+ * Satoshi Medium
+ * Satoshi Medium Italic
+ * Satoshi Bold
+ * Satoshi Bold Italic
+ * Satoshi Black
+ * Satoshi Black Italic
+ *
+*/
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("../fonts/Satoshi-Variable.woff2") format("woff2"), url("../fonts/Satoshi-Variable.woff") format("woff"), url("../fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+  * This is a variable font
+  * You can controll variable axes as shown below:
+  * font-variation-settings: 'wght' 900.0;
+  *
+  * available axes:
+
+  * 'wght' (range from 300.0 to 900.0)
+
+  */
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: url("../fonts/Satoshi-VariableItalic.woff2") format("woff2"), url("../fonts/Satoshi-VariableItalic.woff") format("woff"), url("../fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff"), url("../fonts/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-LightItalic";
+  src: url("../fonts/Satoshi-LightItalic.woff2") format("woff2"), url("../fonts/Satoshi-LightItalic.woff") format("woff"), url("../fonts/Satoshi-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff"), url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"), url("../fonts/Satoshi-Italic.woff") format("woff"), url("../fonts/Satoshi-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"), url("../fonts/Satoshi-Medium.woff") format("woff"), url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"), url("../fonts/Satoshi-MediumItalic.woff") format("woff"), url("../fonts/Satoshi-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff"), url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BoldItalic";
+  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"), url("../fonts/Satoshi-BoldItalic.woff") format("woff"), url("../fonts/Satoshi-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-Black.woff") format("woff"), url("../fonts/Satoshi-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BlackItalic";
+  src: url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"), url("../fonts/Satoshi-BlackItalic.woff") format("woff"), url("../fonts/Satoshi-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+/**
+ * Basic typography style for copy text
+ */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  letter-spacing: normal;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+p {
+  font-family: "Satoshi-Variable", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+p:empty {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: "Satoshi-Variable", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 52px;
+  }
+}
+@media (max-width: 710px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-family: "Satoshi-Variable", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+@media (max-width: 991px) {
+  h2 {
+    font-size: 44px;
+  }
+}
+@media (max-width: 710px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+h3 {
+  font-family: "Satoshi-Variable", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+@media (max-width: 710px) {
+  h3 {
+    font-size: 32px;
+  }
+}
+
+h4 {
+  font-family: "Satoshi-Variable", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+@media (max-width: 991px) {
+  h4 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 710px) {
+  h4 {
+    font-size: 24px;
+  }
+}
+
+h5 {
+  font-family: "Satoshi-Variable", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+@media (max-width: 710px) {
+  h5 {
+    font-size: 20px;
+  }
+}
+
+h6 {
+  font-family: "Satoshi-Variable", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+@media (max-width: 710px) {
+  h6 {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */
